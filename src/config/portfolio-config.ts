@@ -16,8 +16,8 @@ export const portfolioConfig = {
   // 1. A figma:asset import (e.g., 'figma:asset/yourimageid.png')
   // 2. An external URL (e.g., 'https://example.com/photo.jpg')
   // 3. A local import path
-  profileImage: 'images/profile.jpg',
-  heroImage: 'images/hero.jpg',
+  profileImage: 'images/BDS_website_project.png',
+  heroImage: 'images/BDS_website_project.png',
 
   // Social Media Links
   social: {
