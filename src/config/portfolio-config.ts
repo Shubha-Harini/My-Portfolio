@@ -16,8 +16,8 @@ export const portfolioConfig = {
   // 1. A figma:asset import (e.g., 'figma:asset/yourimageid.png')
   // 2. An external URL (e.g., 'https://example.com/photo.jpg')
   // 3. A local import path
-  profileImage: '/images/profile.jpg',
-  heroImage: '/images/hero.jpg',
+  profileImage: 'images/profile.jpg',
+  heroImage: 'images/hero.jpg',
 
   // Social Media Links
   social: {
@@ -27,7 +27,7 @@ export const portfolioConfig = {
 
   // Resume Download
   // Update with your actual resume file path or URL
-  resumeUrl: '/Shubha Harini S Resume.pdf', // Replace with your resume URL or file path
+  resumeUrl: 'Shubha Harini S Resume.pdf', // Replace with your resume URL or file path
 
   // Project Links (Add your project URLs here when available)
   projects: {

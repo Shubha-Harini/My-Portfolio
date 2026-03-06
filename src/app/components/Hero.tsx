@@ -232,7 +232,7 @@ const Hero = () => {
                 className="relative z-10 w-full h-full rounded-full overflow-hidden border-4 border-blue-300 dark:border-blue-700 shadow-2xl"
               >
                 <img
-                  src="/images/hero.jpg"
+                  src="images/hero.jpg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />

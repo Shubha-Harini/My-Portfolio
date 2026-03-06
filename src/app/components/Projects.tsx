@@ -49,7 +49,7 @@ const Projects = () => {
     {
       title: 'MEDVAULT',
       description: 'Medical Record Management System for secure storage and management of medical records.',
-      image: '/images/medvault_project.png',
+      image: 'images/medvault_project.png',
       tech: ['React', 'Node.js', 'MongoDB', 'Express.js'],
       liveUrl: portfolioConfig.projects.urls['MEDVAULT'] || '#',
       githubUrl: portfolioConfig.projects.urls['MEDVAULT'] || '#',
@@ -57,7 +57,7 @@ const Projects = () => {
     {
       title: 'GREENWORLD',
       description: 'Real-estate website for property listings and client engagement.',
-      image: '/images/greenworld_project.png',
+      image: 'images/greenworld_project.png',
       tech: ['React', 'HTML', 'CSS', 'JavaScript'],
       liveUrl: portfolioConfig.projects.urls['GREENWORLD'] || '#',
       githubUrl: portfolioConfig.projects.urls['GREENWORLD'] || '#',
@@ -65,7 +65,7 @@ const Projects = () => {
     {
       title: 'OFFICE TRACKER',
       description: 'Tracker application for office employees to track their attendance and leave requests.',
-      image: '/images/tracker_project.png',
+      image: 'images/tracker_project.png',
       tech: ['React', 'MongoDB', 'Tailwind CSS', 'OnRender'],
       liveUrl: portfolioConfig.projects.urls['PORTFOLIO'] || '#',
       githubUrl: portfolioConfig.projects.urls['PORTFOLIO'] || '#',
@@ -100,13 +100,13 @@ const Projects = () => {
 
         // Map GitHub repos to project format
         const repoImages: Record<string, string> = {
-          'Job-Notification-App': '/images/Job-Notification-App.png',
-          'Placement-Readiness-Platform': '/images/Placement-Readiness-Platform.png',
-          'Reg-Login-frontend': '/images/Reg-Login-frontend.png',
-          'KodFlix-Reg-Login-frontend': '/images/KodFlix-Reg-Login.png',
-          'KodFlix-LandingPage': '/images/KodFlix-LandingPage.png',
-          'Greet-App': '/images/Greet-App.png',
-          'lms-platform-frontend': '/images/lms-platform-frontend.png',
+          'Job-Notification-App': 'images/Job-Notification-App.png',
+          'Placement-Readiness-Platform': 'images/Placement-Readiness-Platform.png',
+          'Reg-Login-frontend': 'images/Reg-Login-frontend.png',
+          'KodFlix-Reg-Login-frontend': 'images/KodFlix-Reg-Login.png',
+          'KodFlix-LandingPage': 'images/KodFlix-LandingPage.png',
+          'Greet-App': 'images/Greet-App.png',
+          'lms-platform-frontend': 'images/lms-platform-frontend.png',
         };
 
         const fetchedProjects = filteredRepos.map((repo, index) => {
