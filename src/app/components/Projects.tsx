@@ -107,6 +107,7 @@ const Projects = () => {
           'KodFlix-LandingPage': 'images/KodFlix-LandingPage.png',
           'Greet-App': 'images/Greet-App.png',
           'lms-platform-frontend': 'images/lms-platform-frontend.png',
+          'My-Portfolio': 'images/my-portfolio.png',
         };
 
         const fetchedProjects = filteredRepos.map((repo, index) => {
@@ -125,16 +126,23 @@ const Projects = () => {
             description: repo.description || 'Check out my code on GitHub for more details on this project.',
             image: stockImage,
             tech: tech.length > 0 ? tech : ['Code'],
-            liveUrl: repo.homepage || repo.html_url,
+            liveUrl: portfolioConfig.projects.urls[repo.name] || repo.homepage || repo.html_url,
             githubUrl: repo.html_url,
           };
         });
 
-        // Combine static projects and fetched projects (avoid duplicates by name)
         const staticTitles = staticProjects.map(p => p.title.toLowerCase());
         const uniqueFetchedProjects = fetchedProjects.filter(p => !staticTitles.includes(p.title.toLowerCase()));
 
-        setProjects([...staticProjects, ...uniqueFetchedProjects]);
+        // Ensure My-Portfolio redirects to home if that's the desired behavior
+        const finalProjects = [...staticProjects, ...uniqueFetchedProjects].map(p => {
+          if (p.title === 'MY PORTFOLIO') {
+            return { ...p, liveUrl: '#hero', image: 'images/my-portfolio.png' };
+          }
+          return p;
+        });
+
+        setProjects(finalProjects);
       } catch (error) {
         console.error('Error fetching github projects:', error);
         setProjects(staticProjects);

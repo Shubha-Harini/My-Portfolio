@@ -16,8 +16,8 @@ export const portfolioConfig = {
   // 1. A figma:asset import (e.g., 'figma:asset/yourimageid.png')
   // 2. An external URL (e.g., 'https://example.com/photo.jpg')
   // 3. A local import path
-  profileImage: 'images/BDS_website_project.png',
-  heroImage: 'images/BDS_website_project.png',
+  profileImage: 'images/profile.png',
+  heroImage: 'images/hero.jpg',
 
   // Social Media Links
   social: {
@@ -35,8 +35,9 @@ export const portfolioConfig = {
     urls: {
       'MEDVAULT': 'https://medvault-syh2.onrender.com/',
       'GREENWORLD': 'https://www.greenworldproperties.com/',
-      'PORTFOLIO': 'https://bds-officetracker.onrender.com/',
-    },
+      'My-Portfolio': '#hero',
+      'PORTFOLIO': '#hero',
+    } as Record<string, string>,
   },
 };
 
